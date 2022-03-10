@@ -10,13 +10,14 @@ Temperaturas - Cozimento
 160º F ou 71º C - Well done (Bem passada)
 """
 
+
 class temp_da_carne:
     def __init__(self, temperatura):
         self.temperatura = temperatura
 
     def analisa_ponto(self):
 
-        if self.temperatura <= 48:
+        if self.temperatura < 48:
             return 'Sua carne esta: Rare (Selada)'
 
         elif 48 < self.temperatura < 54:
